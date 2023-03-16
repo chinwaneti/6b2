@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_schedule</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        tr td {
+            padding: 1em;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="3">
+        <caption>Food_Schedule</caption>
+        <thead>
+            <tr>
+                <th>Days</th>
+                <th>Breakfast</th>
+                <th>Lunch</th>
+                <th>Dinner</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>Bread & Tea</td>
+                <td><abbr title="spaggetti"></abbr>Spagg</td>
+                <td>Yam & Egg</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>Custard & Moin Moin</td>
+                <td rowspan="3">Rice</td>
+                <td>Eba & Ogbono Soup</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Cereal</td>
+                <!-- <td>Rice</td> -->
+                <td>Noodles</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>Oats & Fruit
+
+                </td>
+                <!-- <td>Rice</td> -->
+                <td>Eba & White Soup</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>Yam & Egg</td>
+                <td>Eba & Vegetable Soup</td>
+                <td>Noodles</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>Noodles</td>
+                <td>Beans</td>
+                <td>Spaggetti</td>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+                <!-- <td>Rice</td> -->
+                <!-- <td>Rice</td> -->
+                <td colspan="3">Rice</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Food Timetable Changes Every Month</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+
+</html>

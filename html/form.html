@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Learn How To Cook</h1>
+    <p>
+        <a href="#">sign up to become a chef</a>
+    </p>
+    <main>
+        <form>
+            <fieldset>
+                <input type="radio" name="cook" id="spicy">
+                <label for="spicy">learn how to cook african dishes</label>
+            </fieldset>
+            <fieldset>
+                <input type="radio" name="cook" id="non spicy">
+                <label for="non spicy">learn how to cook continental dishes</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    personal information
+                </legend>
+                <ul>
+                    <li>
+                        <label for="firstname">firstname</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="your first name" required>
+                    </li>
+                    <li>
+                        <label for="surname">surname</label>
+                        <input type="text" name="surname" id="surname" required></li>
+                    <li>
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="your email@gmail.com" required></li>
+                    <li>
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" required></li>
+                    <li>
+                        <label for="phone">phonenumber</label>
+                        <input type="tel" name="phonenumber" id="phone" required></li>
+                    <li>
+                        <label for="city">city</label>
+                        <select>
+                            <optgroup label="East">
+                                <option value="on">Onitsha</option>
+                                <option value="ab">Abuja</option>
+                                <option value="ow">Owerri</option>
+                                <option value="an">anambra</option>
+                            </optgroup>
+                            <optgroup label="West">
+                                <option value="Lag" selected>Lagos</option>
+                                <option value="og" >Ogun</option>
+                            </optgroup>
+                            <optgroup label="North">
+                                <option value="So">Sokoto</option>
+                                <option value="Ka">Kano</option>
+                            </optgroup>
+                            <optgroup label="South">
+                                <option value="Ba">Bayelsa</option>
+                                <option value="Cr">Cross River</option>
+                            </optgroup>
+                    </li>    
+                        </select>
+                        <li>
+                            <label for="code">invite code(optional)</label>
+                            <input type="text" name="invite code" id="code">
+                        </li>
+                        <li>
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">I have read the terms and conditions</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">I Accept</label>
+                        </li>
+                        <li>
+                            <input type="file" name="file" id="photo" placeholder="your passport" required accept=".jepg, .png">
+                            <label for="photo">passport</label>
+                        </li>
+                        <li>
+                            <input type="" name="" id="">
+                        </li>
+                </ul>
+        </form>
+    </main>
+</body>
+
+</html>
