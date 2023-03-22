@@ -1,0 +1,60 @@
+section {
+    height: 50vh;
+    width: 50vw;
+    margin: 10em;
+}
+
+
+/* h2.Af { */
+
+
+/* /border-top: 50em inset blue border-bottom: 1em inset blue; */
+
+
+/* } */
+
+.jap {
+    background: radial-gradient(red 15%, red 30%, white 30%, white 60%);
+    border-left: 5px outset black;
+    border-right: 5px outset black;
+}
+
+.ger {
+    background: linear-gradient(180deg, black 33.3%, red 33.3%, red 66.6%, yellow 66.6%);
+    border-top: 5px outset black;
+    border-bottom: 5px outset black;
+}
+
+.nig {
+    background: linear-gradient(90deg, green 33.3%, white 33.3%, white 66.6%, green 66.6%);
+    border-top: 5px outset black;
+    border-bottom: 5px outset black;
+}
+
+.gab {
+    background: linear-gradient(180deg, green 33.3%, yellow 33.3%, yellow 66.6%, blue 66.6%);
+    border-top: 5px outset black;
+    border-bottom: 5px outset black;
+}
+
+.bel {
+    background: linear-gradient(90deg, black 33.3%, yellow 33.3%, yellow 66.6%, rgb(175, 24, 75) 66.6%);
+    border-left: 5px outset black;
+    border-right: 5px outset black;
+}
+
+.fra {
+    background: linear-gradient(90deg, blue 33.3%, white 33.3%, white 66.6%, red 66.6%);
+    border-left: 5px outset black;
+    border-right: 5px outset black;
+}
+
+.gam {
+    background: linear-gradient(180deg, red 33.3%, white 33.3%, white 38.3%, navy 38.3%, navy 66.6%, white 66.6%, white 71.6%, rgb(4, 46, 4) 71.6%);
+    border-top: 5px outset black;
+    border-bottom: 5px outset black;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/neon-valentine-s-day-illustration_53876-80660.jpg?w=740&t=st=1679491981~exp=1679492581~hmac=22e6f62441613ea6e7c3417cc54ed45fb583235750d4426e4d63665fb1c4dd47);
+}
