@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+    color: red;
+    transition: all 0.4s linear;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+li.me {
+    width: 30vw;
+    border-radius: 2em;
+    border-color: blue;
+    border-style: ridge;
+    margin-bottom: 25px;
+    padding: 2.5rem;
+    list-style-type: none;
+    background-color: cyan;
+}
+
+.me:hover {
+    background: linear-gradient(180deg, rgb(180, 10, 172) 0%, yellow 0%, yellow 43%, violet 97%);
+    border-bottom: double;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg);
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    left: 65%;
+}
