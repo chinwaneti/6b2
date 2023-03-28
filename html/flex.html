@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            background-color: brown;
+            align-items: center;
+            height: 150px;
+            padding: 10px;
+        }
+        
+        nav ul li:nth-of-type(3n+1) {
+            align-self: flex-start;
+        }
+        
+        nav ul li:nth-of-type(3n+3) {
+            align-self: flex-end;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 100px 200px 200px 150px;
+            grid-template-areas: "a a a b" "a a a b" "c c c d" "c c c d" "e e e e";
+            gap: 10px;
+            background-color: aqua;
+        }
+        
+        main> :nth-child(1) {
+            grid-area: a;
+        }
+        
+        main> :nth-child(2) {
+            grid-area: c;
+        }
+        
+        main> :nth-child(3) {
+            grid-area: b;
+        }
+        
+        main> :nth-child(4) {
+            grid-area: d;
+        }
+        
+        main> :nth-child(5) {
+            grid-area: e;
+        }
+        
+        div {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: (2, 200px);
+            gap: 10px;
+        }
+        
+        div section:first-of-type {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: (1px 200px);
+            gap: 10px;
+            background-color: blueviolet;
+        }
+        
+        div section:last-of-type {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: (1, 200px);
+            gap: 10px;
+        }
+        
+        section>* {
+            background-color: fuchsia;
+        }
+        
+        aside:first-of-type {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 100px);
+        }
+        
+        aside>* {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Joel</li>
+                <li>Mitchel</li>
+                <li>Victory</li>
+                <li>Jason</li>
+                <li>Love</li>
+                <li>Jayden</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>give me work bros!!!</section>
+        <div>
+            <section>
+                <article> gimme me work</article>
+                <article>gimme work</article>
+            </section>
+            <section>
+                <article>gimme work</article>
+                <article>gimme work</article>
+                <article>gimme work</article>
+            </section>
+        </div>
+        <aside>
+            gimme work
+        </aside>
+        <aside>gimme work</aside>
+        <footer>
+            <article>footer</article>
+        </footer>
+    </main>
+</body>
+
+</html>
