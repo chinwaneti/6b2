@@ -1,0 +1,105 @@
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: yellow;
+    align-items: center;
+    height: 150px;
+    padding: 10px;
+}
+
+nav ul li:nth-of-type(4n+2) {
+    align-self: flex-start;
+    border: 1px;
+    border-color: black;
+}
+
+nav ul li:nth-of-type(1n+6) {
+    align-self: flex-end;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 150px 150px 150px 150px 100px;
+    grid-template-areas: "a a a b" "a a a b" "c c c b" "c c c b" "c c c b" "d d d d";
+    gap: 5px;
+    background-color: yellow;
+    color: black;
+}
+
+main> :nth-child(1) {
+    grid-area: a;
+}
+
+main> :nth-child(2) {
+    grid-area: b;
+}
+
+main> :nth-child(3) {
+    grid-area: c;
+}
+
+main> :nth-child(4) {
+    grid-area: d;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (3, 150px);
+    gap: 5px;
+    background-color: white;
+}
+
+div section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (1, 150px);
+    gap: 5px;
+    /* background-color: red; */
+}
+
+div section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (1, 150px);
+    gap: 5px;
+    /* background-color: red; */
+}
+
+div section:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (1, 150px);
+    gap: 5px;
+    /* background-color: red; */
+}
+
+section>* {
+    background-color: red;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 150px);
+    background-color: white;
+    gap: 5px;
+}
+
+article.me {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 150px);
+    gap: 5px;
+    background-color: rgb(4, 43, 4);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (1, 100px);
+    background-color: rgb(52, 52, 218);
+}
