@@ -89,16 +89,16 @@ aside {
     gap: 5px;
 }
 
-article.me {
+
+/* article.me {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 150px);
     gap: 5px;
     background-color: rgb(4, 43, 4);
-}
+} */
 
 footer {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: (1, 100px);
     background-color: rgb(52, 52, 218);
