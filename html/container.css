@@ -7,23 +7,25 @@ nav ul {
     align-items: center;
     height: 150px;
     padding: 10px;
+    border: 3px solid;
+    border-color: black;
 }
 
-nav ul li:nth-of-type(-1n+2) {
+nav ul li:nth-of-type(-n+2) {
     align-self: flex-start;
     border: 1px;
     border-color: black;
 }
 
-nav ul li:nth-of-type(1n+6) {
+nav ul li:nth-of-type(n+6) {
     align-self: flex-end;
 }
 
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px 150px 150px 150px 150px 100px;
-    grid-template-areas: "a a a b" "a a a b" "c c c b" "c c c b" "c c c b" "d d d d";
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-areas: "a a a b" "a a a b" "c c c b" "c c c b" "c c c b";
     gap: 5px;
     background-color: yellow;
     color: black;
@@ -39,10 +41,6 @@ main> :nth-child(2) {
 
 main> :nth-child(3) {
     grid-area: c;
-}
-
-main> :nth-child(4) {
-    grid-area: d;
 }
 
 div {
@@ -74,7 +72,6 @@ div section:last-of-type {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: (1, 150px);
     gap: 5px;
-    /* background-color: red; */
 }
 
 section>* {
@@ -85,21 +82,15 @@ aside {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 150px);
-    background-color: white;
+    background-color: rgb(11, 68, 11);
     gap: 5px;
 }
 
-
-/* article.me {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 150px);
-    gap: 5px;
-    background-color: rgb(4, 43, 4);
-} */
+aside* {
+    background-color: aqua;
+}
 
 footer {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: (1, 100px);
     background-color: rgb(52, 52, 218);
+    height: 100px;
 }

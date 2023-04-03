@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media print {
+            article {
+                height: 80px;
+                border: #C9363C ridge 5px;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            nav ul {
+                list-style-type: none;
+                padding: 25px;
+                justify-content: space-between;
+                height: 100px;
+                align-items: center;
+                border: 10px #C9363C ridge;
+                background-color: aqua;
+                display: flex;
+            }
+            nav ul li:nth-child(-n+2) {
+                align-self: flex-start;
+            }
+            nav ul li:nth-child(n+6) {
+                align-self: flex-end;
+            }
+            main {
+                background-color: brown;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 200px);
+                gap: 10px;
+                border: 10px #C9363C ridge;
+            }
+            article {
+                background-color: yellow;
+            }
+            article:first-of-type {
+                grid-area: 1;
+            }
+            article:nth-child(2) {
+                grid-area: 2;
+            }
+            article:nth-child(3) {
+                grid-area: 3;
+            }
+            article:nth-child(4) {
+                grid-area: 4;
+            }
+            article:nth-child(5) {
+                grid-area: 5;
+            }
+            article:nth-child(6) {
+                grid-area: 6;
+            }
+            article:nth-child(7) {
+                grid-area: 7;
+            }
+            article:nth-child(8) {
+                grid-area: 8;
+            }
+            article:nth-child(9) {
+                grid-area: 9;
+            }
+            article:nth-child(10) {
+                grid-area: 10;
+            }
+            footer {
+                height: 100px;
+                padding: 25px;
+                border: #C9363C ridge 10px;
+                background-color: aqua;
+                align-items: last baseline;
+                display: flex;
+            }
+        }
+        
+        @media screen and (min-width:481px) {
+            nav ul {
+                list-style-type: none;
+                padding: 25px;
+                justify-content: space-between;
+                height: 100px;
+                align-items: center;
+                border: 10px #C9363C ridge;
+                background-color: aqua;
+                display: flex;
+            }
+            nav ul li:nth-child(-n+2) {
+                align-self: flex-start;
+            }
+            nav ul li:nth-child(n+6) {
+                align-self: flex-end;
+            }
+            main {
+                background-color: brown;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(6, 200px);
+                gap: 10px;
+                border: 10px #C9363C ridge;
+            }
+            article {
+                background-color: fuchsia;
+            }
+            article:first-of-type {
+                grid-area: 1/1/2/3;
+            }
+            article:nth-child(2) {
+                grid-area: 2/1/3/2;
+            }
+            article:nth-child(3) {
+                grid-area: 2/2/3/3;
+            }
+            article:nth-child(4) {
+                grid-area: 3/1/4/2;
+            }
+            article:nth-child(5) {
+                grid-area: 3/2/4/3;
+            }
+            article:nth-child(6) {
+                grid-area: 4/1/5/2;
+            }
+            article:nth-child(7) {
+                grid-area: 4/2/5/3;
+            }
+            article:nth-child(8) {
+                grid-area: 5/1/6/2;
+            }
+            article:nth-child(9) {
+                grid-area: 5/2/6/3;
+            }
+            article:nth-child(10) {
+                grid-area: 6/1/7/3;
+            }
+            footer {
+                height: 100px;
+                padding: 25px;
+                border: #C9363C ridge 10px;
+                background-color: aqua;
+                align-items: last baseline;
+                display: flex;
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            nav ul {
+                list-style-type: none;
+                padding: 25px;
+                justify-content: space-between;
+                height: 100px;
+                align-items: center;
+                border: 10px #C9363C ridge;
+                background-color: aqua;
+                display: flex;
+            }
+            nav ul li:nth-child(-n+2) {
+                align-self: flex-start;
+            }
+            nav ul li:nth-child(n+6) {
+                align-self: flex-end;
+            }
+            main {
+                background-color: brown;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(5, 200px);
+                gap: 10px;
+                border: 10px #C9363C ridge;
+            }
+            article {
+                background-color: cyan;
+            }
+            article:first-of-type {
+                grid-area: 1/1/3/4;
+            }
+            article:nth-child(2) {
+                grid-area: 1/4/2/5;
+            }
+            article:nth-child(3) {
+                grid-area: 2/4/3/5;
+            }
+            article:nth-child(4) {
+                grid-area: 3/1/4/3;
+            }
+            article:nth-child(5) {
+                grid-area: 3/3/4/4;
+            }
+            article:nth-child(6) {
+                grid-area: 3/4/4/5
+            }
+            article:nth-child(7) {
+                grid-area: 4/1/5/2;
+            }
+            article:nth-child(8) {
+                grid-area: 4/2/5/3;
+            }
+            article:nth-child(9) {
+                grid-area: 4/3/5/4;
+            }
+            article:nth-child(10) {
+                grid-area: 4/4/5/5;
+            }
+            article:nth-child(11) {
+                grid-area: 5/1/6/4;
+            }
+            article:nth-child(12) {
+                grid-area: 5/4/6/5;
+            }
+            footer {
+                height: 100px;
+                padding: 25px;
+                border: #C9363C ridge 10px;
+                background-color: aqua;
+                align-items: last baseline;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Me1</li>
+            <li>Me2</li>
+            <li>Me3</li>
+            <li>Me4</li>
+            <li>Me5</li>
+            <li>Me6</li>
+            <li>Me7</li>
+        </ul>
+    </nav>
+    <main>
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+        <article>6</article>
+        <article>7</article>
+        <article>8</article>
+        <article>9</article>
+        <article>10</article>
+        <article>11</article>
+        <article>12</article>
+    </main>
+    <footer>
+        <article>chidinma &copy; copyright 2023</article>
+    </footer>
+</body>
+
+</html>
+
+</html>
