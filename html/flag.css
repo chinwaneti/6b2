@@ -50,7 +50,7 @@
                                         height: 100vh;
                                         display: flex;
                                         align-items: center;
-                                        background: url(./media/-removebg-preview.png) no-repeat;
+                                        background: url(./media/-removebg-preview.png) no-repeat bo;
                                         background-size: contain;
                                         background-position: right;
                                         border: #081b29;
@@ -380,9 +380,9 @@
                                     .body_content h1 {
                                         font-size: 40px;
                                         font-weight: 600;
-                                        span {
-                                            color: #f9004f;
-                                        }
+                                    }
+                                    .body_content h1:hover {
+                                        transform: scale(1.2);
                                     }
                                     .body_content h3 {
                                         font-size: 20px;
@@ -475,5 +475,11 @@
                                     .leg a:hover {
                                         color: black;
                                         background-color: var(--h3-color);
+                                    }
+                                    .skills {
+                                        background-color: yellowgreen;
+                                        position: relative;
+                                        bottom: 40px;
+                                        /* width: 100vh; */
                                     }
                                 }
